@@ -1,1 +1,2 @@
-cloudsmart.pem
+terraform.tfstate
+terraform.tfstate.backup
