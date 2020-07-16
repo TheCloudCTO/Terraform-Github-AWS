@@ -7,5 +7,5 @@ variable "whodis" {
 }
 
 variable "the_name" {
-    default = "default_name"
+    default = "state_your_name"
 }
