@@ -7,5 +7,5 @@ variable "whodis" {
 }
 
 variable "the_name" {
-    default = "GitHub_Actions_Works_July17-4"
+    default = "default_name"
 }
