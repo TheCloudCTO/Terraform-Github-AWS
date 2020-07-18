@@ -11,3 +11,20 @@ resource "aws_instance" "temporary-instance" {
     Name = var.the_name
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "thecloudcto-github-actions-tf-state"
+    key    = "default-infrastructure"
+    region = "us-east-1"
+    profile = "cloudsmart-temp-acct-jake"
+  }
+}
+
+resource "aws_s3_bucket" "terraform_state" {
+  bucket = "thecloudcto-github-actions-tf-state"
+
+  versioning {
+    enabled = true
+  }
+}
