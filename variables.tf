@@ -3,7 +3,7 @@ variable "location" {
 }
 
 variable "whodis" {
-    default = "cloudsmart-temp-acct-jake"
+    default = "cloudsmart-temp-acct-jaker"
 }
 
 variable "the_name" {
